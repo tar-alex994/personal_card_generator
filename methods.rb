@@ -47,7 +47,7 @@ def get_email
     print "Email: "
 
     email = STDIN.gets.chomp.downcase
-  end until email =~ /(?=\A.{,100}\z)\A\[\w\.\-]+@[a-z\d\-]+\.[a-z]{2,}\z/
+  end until email =~ /(?=\A.{,100}\z)\A[\w\.\-]+@[a-z\d\-]+\.[a-z]{2,}\z/
 
   "Email: #{email}"
 end
