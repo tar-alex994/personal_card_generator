@@ -4,4 +4,4 @@ puts "Вы должны ввести данные для заполнения в
 
 data = []
 
-data << get_name << get_descreption << get_phone << get_email
+data << get_image << get_name << get_descreption << get_phone << get_email

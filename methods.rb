@@ -1,3 +1,15 @@
+def get_image
+  begin
+    puts 'Чтобы добавить фотографию в визитную карточку, ' +
+         'введите ссыклу на существующий файл в формате .jpg или .png:'
+
+    link = STDIN.gets.chomp
+  end until link[-4,4] =~ /\.(?:jpg|png)/ && File.exist?(link)
+
+  link
+end
+
+
 def get_name
   begin
     puts "Введите фамилию, имя и отчество:"
