@@ -8,11 +8,6 @@ class PersonalCard
   end
 
 
-  def self.create_css_doc
-
-  end
-
-
   def get_image
     begin
       puts 'Чтобы добавить фотографию в визитную карточку, ' +
@@ -106,7 +101,6 @@ class PersonalCard
     p_tags  = [@name, @descreption, @phone, @email]
     p_tags  = p_tags.map { |el| tab * 2 + "<p>#{el}</p>\n" }.join
 
-    tab + "<div>\n#{img_tag + p_tags}#{tab}</div>\n"
+    tab + "<div class=\"card\">\n#{img_tag + p_tags}#{tab}</div>\n"
   end
 end
-
